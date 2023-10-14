@@ -2,7 +2,7 @@ const createHeader=()=>{
     const header=document.createElement("header")
     const headerTop=createHeaderTop();
     const headerCenter=createHeaderCenter();
-    header.appendChild(headerTop,headerCenter);
+    header.append(headerTop,headerCenter);
     
     header.classList.add("red");
 
@@ -48,7 +48,7 @@ const createHeader=()=>{
     };
     
     const createHeaderCenter=()=>{
-        const headerCenter=document.createElement("div")
+        const headerCenter=document.createElement("div");
         const left=document.createElement("img");
         left.src="refuge.png";
 
@@ -65,7 +65,7 @@ const createHeader=()=>{
         right.append(accueil,menu,reservation,galerie);
 
         headerCenter.append(left,right);
-
+        console.log("wtf?")
         return headerCenter;
     };
     export{createHeader};
