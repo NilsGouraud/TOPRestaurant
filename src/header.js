@@ -1,8 +1,22 @@
 const createHeader=()=>{
-    const header=document.createElement("header");
-    const headerLeft=document.createElement("div");
-    const headerRight=document.createElement("div");
+    const header=document.createElement("header")
+    const headerTop=createHeaderTop();
+    const headerCenter=createHeaderCenter();
+    header.appendChild(headerTop,headerCenter);
     
+    header.classList.add("red");
+
+    document.getElementById("content").appendChild(header);
+
+
+
+    };
+
+    const createHeaderTop=()=>{
+    const headerTop=document.createElement("div");
+    const left=document.createElement("div");
+    const right=document.createElement("div");
+
     const ouverture=document.createElement("div");
     const ouvertureText="Ouvert du mercredi au dimanche | 11h45-14h le midi, 19h-21h le soir. Ouvert le dimanche soir uniquement pour les groupes sur réservation."
     ouverture.append(ouvertureText);
@@ -11,7 +25,7 @@ const createHeader=()=>{
     const telText="09 72 86 78 06";
     tel.append(telText);
     
-    headerLeft.append(ouverture,tel);
+    left.append(ouverture,tel);
     
     const ulSocialNetworks=document.createElement("ul");
     const facebook=document.createElement("div");
@@ -25,12 +39,33 @@ const createHeader=()=>{
     instagram.append(instagramText);
     
     ulSocialNetworks.append(facebook,googleMap,instagram);
+    right.append(ulSocialNetworks);
     
-    headerRight.append(ulSocialNetworks);
-    
-    
-    header.append(headerLeft,headerRight);
-    document.body.appendChild(header);
+
+    headerTop.append(left,right);
+
+    return headerTop;
     };
     
+    const createHeaderCenter=()=>{
+        const headerCenter=document.createElement("div")
+        const left=document.createElement("img");
+        left.src="refuge.png";
+
+        const right=document.createElement("nav");
+        const accueil=document.createElement("a");
+        accueil.textContent="ACCEUIL";
+        const menu=document.createElement("a");
+        menu.textContent="MENU";
+        const reservation=document.createElement("a");
+        reservation.textContent="RESERVATION";
+        const galerie=document.createElement("a");
+        galerie.textContent="GALERIE";
+
+        right.append(accueil,menu,reservation,galerie);
+
+        headerCenter.append(left,right);
+
+        return headerCenter;
+    };
     export{createHeader};
