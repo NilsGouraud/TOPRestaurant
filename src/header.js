@@ -1,3 +1,5 @@
+import { createSocialNetworksButtons } from "./socialNetworks";
+
 const createHeader=()=>{
     const header=document.createElement("header")
     const headerTop=createHeaderTop();
@@ -27,16 +29,8 @@ const createHeader=()=>{
     
     left.append(ouverture,tel);
     
-    const ulSocialNetworks=document.createElement("ul");
-    const facebook=document.createElement("div");
-    const facebookText="facebook";
-    facebook.append(facebookText)
-    const googleMap=document.createElement("div")
-    const googleMapText="google map";
-    googleMap.append(googleMapText)
-    const instagram=document.createElement("div")
-    const instagramText="instagram";
-    instagram.append(instagramText);
+    const ulSocialNetworks=createSocialNetworksButtons();
+
     
     ulSocialNetworks.append(facebook,googleMap,instagram);
     right.append(ulSocialNetworks);
@@ -48,6 +42,7 @@ const createHeader=()=>{
     };
     
     const createHeaderCenter=()=>{
+        //TODO : make it sticky
         const headerCenter=document.createElement("div");
         const left=document.createElement("img");
         left.src="refuge.png";
