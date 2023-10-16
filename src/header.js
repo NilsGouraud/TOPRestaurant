@@ -3,11 +3,15 @@ import { createSocialNetworksButtons } from "./socialNetworks";
 const createHeader=()=>{
     const header=document.createElement("header")
     const headerTop=createHeaderTop();
+    const headerBottom=createHeaderBottom();
+    headerTop.classList.add("flex");
     const headerCenter=createHeaderCenter();
-    header.append(headerTop,headerCenter);
+    header.append(headerTop,headerCenter,headerBottom);
     
-    header.classList.add("red");
-
+    header.classList.add("backgroundHeaderAccueil","header");
+    headerTop.classList.add("headerTop");
+    headerCenter.classList.add("black","flex","headerCenter");
+    headerBottom.classList.add("headerBottom");
     document.getElementById("content").appendChild(header);
 
 
@@ -32,7 +36,6 @@ const createHeader=()=>{
     const ulSocialNetworks=createSocialNetworksButtons();
 
     
-    ulSocialNetworks.append(facebook,googleMap,instagram);
     right.append(ulSocialNetworks);
     
 
@@ -49,11 +52,11 @@ const createHeader=()=>{
 
         const right=document.createElement("nav");
         const accueil=document.createElement("a");
-        accueil.textContent="ACCEUIL";
+        accueil.textContent="ACCUEUIL";
         const menu=document.createElement("a");
         menu.textContent="MENU";
         const reservation=document.createElement("a");
-        reservation.textContent="RESERVATION";
+        reservation.textContent="réservation".toUpperCase();
         const galerie=document.createElement("a");
         galerie.textContent="GALERIE";
 
@@ -63,4 +66,12 @@ const createHeader=()=>{
         console.log("wtf?")
         return headerCenter;
     };
+
+    const createHeaderBottom=()=>{
+        const headerBottom=document.createElement("div");
+        headerBottom.textContent="lorem dolor ispum sit amet"
+
+        return headerBottom;
+    }
+
     export{createHeader};

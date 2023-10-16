@@ -9,6 +9,10 @@ const createSocialNetworksButtons=()=>{
     const instagram=document.createElement("div")
     const instagramText="instagram";
     instagram.append(instagramText);  
+
+    ulSocialNetworks.append(facebook,googleMap,instagram);
+
+    return ulSocialNetworks;
 }
 
 export{createSocialNetworksButtons};
