@@ -3,7 +3,7 @@ import { createSocialNetworksButtons } from "./socialNetworks";
 const createHeader=()=>{
     const header=document.createElement("header")
     const headerTop=createHeaderTop();
-    const headerBottom=createHeaderBottom();
+    const headerBottom=createHeaderBottomAccueil();
     headerTop.classList.add("flex");
     const headerCenter=createHeaderCenter();
     header.append(headerTop,headerCenter,headerBottom);
@@ -11,7 +11,7 @@ const createHeader=()=>{
     header.classList.add("backgroundHeaderAccueil","header");
     headerTop.classList.add("headerTop");
     headerCenter.classList.add("black","flex","headerCenter");
-    headerBottom.classList.add("headerBottom");
+    headerBottom.classList.add("headerBottomAccueil");
     document.getElementById("content").appendChild(header);
 
 
@@ -67,10 +67,20 @@ const createHeader=()=>{
         return headerCenter;
     };
 
-    const createHeaderBottom=()=>{
+    const createHeaderBottomAccueil=()=>{
         const headerBottom=document.createElement("div");
-        headerBottom.textContent="lorem dolor ispum sit amet"
-
+        const h1=document.createElement("h1");
+        h1.textContent="Bienvenue au refuge";
+        const img=document.createElement("img");
+        img.src="marmite.png";
+        const h2=document.createElement("h2");
+        h2.textContent="Restaurant de spécialités savoyardes"
+        const p=document.createElement("p");
+        p.textContent="Entre Cholet et la Tessoualle"
+        const notreCarte=document.createElement("button");
+        notreCarte.type="button";
+        notreCarte.textContent="Notre carte"
+        headerBottom.append(h1, img, h2, p, notreCarte);
         return headerBottom;
     }
 

@@ -84,8 +84,46 @@ html{
     display: flex;
     gap: 1.5rem;
 }
-.headerBottom{
+.headerBottomAccueil{
+    position: relative;
+    color: white;
     height: 40.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 1rem;
+    margin-left: 3rem;
+    top: -5rem;
+}
+.headerBottomAccueil h1{
+    font-size: 2rem;
+}
+.headerBottomAccueil h2{
+    font-size: 1.8rem;
+}
+.headerBottomAccueil p{
+    font-size: 1rem;
+}
+.headerBottomAccueil img{
+    display: block;
+    height: 3rem;
+    width: 20rem;
+}
+.headerBottomAccueil button{
+    width: 9rem;
+    height: 3.2rem;
+    font-weight: 800;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.headerBottomAccueil button:hover{
+    color: red;
+    background-color: white;
+    cursor: pointer;
 }
 .footer{
     display: grid;
