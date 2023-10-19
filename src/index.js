@@ -1,6 +1,6 @@
 const { createHeaderAccueil,createHeaderMenu,createHeaderReservation,createHeaderGalerie } = require("./header");
 const { createFooter } = require("./footer");
-
+const { createBodyAccueil,createBodyMenu,createBodyReservation,createBodyGalerie }=require("./body")
 
 const addListeners=()=>{
     const retourAccueil=document.getElementById("retourAccueil");
@@ -52,9 +52,10 @@ const createMenu=()=>{
         formerActive[0].classList.remove("active");
     }
     const header=createHeaderMenu();
+    const body=createBodyMenu();
     const content=document.getElementById("content");
     content.innerHTML="";
-    content.append(header,footer);
+    content.append(header,body,footer);
     const activeTab=document.getElementById("menu");
     activeTab.classList.add("active");
     addListeners();

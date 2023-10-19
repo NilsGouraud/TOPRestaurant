@@ -262,7 +262,27 @@ li{
 .flex{
     display: flex;
 }
-
+.conteneurCarte{
+    display: flex;
+    justify-content: center;
+    padding: 96px;
+}
+.carte{
+    background-color: white;
+    border: 1px solid black;
+    max-height: 7210px;
+    width: 1248px;
+    box-shadow: 0 0 20px rgb(167, 167, 167);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding:22px 20px 20px
+}
+.carte img{
+    height: auto;
+    max-width: 724px;
+}
 
 @media all and (max-width:900px){
     *{
