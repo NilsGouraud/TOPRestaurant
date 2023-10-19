@@ -120,10 +120,49 @@ html{
     border-radius: 5px;
     transition: 0.3s;
 }
+a{
+    z-index: 1;
+}
+a:hover{
+    cursor: pointer
+}
 .headerBottomAccueil button:hover{
     color: red;
     background-color: white;
     cursor: pointer;
+    letter-spacing: 0.05rem;
+}
+
+
+.headerBottomAutres{
+    position: relative;
+    color: white;
+    height: 19.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerBottomAutres div{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 4rem;
+    gap: 1rem;
+}
+.headerBottomAutres div h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.headerBottomAutres div a{
+    color: red;
+    font-weight: 500;
 }
 .footer{
     display: grid;
@@ -202,7 +241,9 @@ li{
     width: 100%;
     opacity: 1;
 }
-
+.active{
+    color: red;
+}
 .backgroundHeaderAccueil{
     background-repeat: no-repeat;
     background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(headerAccueil.jpg);
@@ -211,7 +252,11 @@ li{
     transform: rotateX('');
 }
 .backgroundHeaderAutres{
-
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(breadcrumbg.jpg);
+    background-position: 50% 40%;
+    background-size: 165% 225%;
+    transform: rotateX('');
 }
 
 .flex{

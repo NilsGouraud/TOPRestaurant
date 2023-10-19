@@ -3,8 +3,8 @@ import { createSocialNetworksButtons } from "./socialNetworks";
 const createFooter=()=>{
     const footer=document.createElement("div");
     footer.classList.add("footer")
+    footer.id="footer"
     footer.append(quiSommesNous(),categories(),archives(),rechercher());
-    document.getElementById("content").appendChild(footer);
     
     
     return footer;
