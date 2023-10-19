@@ -52,7 +52,7 @@ const createHeader=()=>{
 
         const right=document.createElement("nav");
         const accueil=document.createElement("a");
-        accueil.textContent="ACCUEUIL";
+        accueil.textContent="ACCUEIL";
         const menu=document.createElement("a");
         menu.textContent="MENU";
         const reservation=document.createElement("a");
