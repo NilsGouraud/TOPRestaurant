@@ -6,6 +6,14 @@ const addListeners=()=>{
     const retourAccueil=document.getElementById("retourAccueil");
     if (retourAccueil!=null){
         retourAccueil.onclick=()=>{
+            window.scrollTo(0,0);
+            createAccueil();
+        }
+    }
+    const continuerExplorer=document.getElementById("continuerExplorer");
+    if (continuerExplorer!=null){
+        continuerExplorer.onclick=()=>{
+            window.scrollTo(0,0);
             createAccueil();
         }
     }
@@ -16,15 +24,19 @@ const addListeners=()=>{
         }
     }
     document.getElementById("accueil").onclick=()=>{
+        window.scrollTo(0,0);
         createAccueil();
     }
     document.getElementById("menu").onclick=()=>{
+        window.scrollTo(0,0);
         createMenu();
     }
     document.getElementById("reservation").onclick=()=>{
+        window.scrollTo(0,0);
         createReservation();
     }
     document.getElementById("galerie").onclick=()=>{
+        window.scrollTo(0,0);
         createGalerie();
     }
 }
@@ -66,9 +78,10 @@ const createReservation=()=>{
         formerActive[0].classList.remove("active");
     }
     const header=createHeaderReservation();
+    const body=createBodyReservation();
     const content=document.getElementById("content");
     content.innerHTML="";
-    content.append(header,footer);
+    content.append(header,body,footer);
     const activeTab=document.getElementById("reservation");
     activeTab.classList.add("active");
     addListeners();
@@ -86,7 +99,6 @@ const createGalerie=()=>{
     activeTab.classList.add("active");
     addListeners();
 }
-
 
 
 

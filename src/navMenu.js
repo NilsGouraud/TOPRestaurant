@@ -5,7 +5,7 @@ const createBanner=()=>{
     left.src="refuge.png";
 
     const right=document.createElement("nav");
-    
+
     const accueil=document.createElement("a");
     accueil.setAttribute("id","accueil");
     accueil.textContent="ACCUEIL";
@@ -25,6 +25,7 @@ const createBanner=()=>{
     right.append(accueil,menu,reservation,galerie);
 
     banner.append(left,right);
+    banner.id=("banner");
     console.log("wtf?")
     return banner;
 };

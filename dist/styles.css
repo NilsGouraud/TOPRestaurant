@@ -50,6 +50,7 @@ table {
 
 html{
     font-family: system-ui;
+    scroll-behavior: smooth;
 }
 
 .lineHeight{
@@ -66,7 +67,14 @@ html{
     font-size: 1rem;
     color: white;
 }
+.backgroundHeaderAutres{
+    position: sticky;
+    top: -25.5rem;
+}
 .headerCenter{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
     height: 7rem;
     border-top: 1px solid rgb(79, 79, 79);
     border-bottom: 1px solid rgb(79, 79, 79);
@@ -83,6 +91,17 @@ html{
 .headerCenter nav{
     display: flex;
     gap: 1.5rem;
+    transition: 0.3s;
+}
+.headerCenter a{
+    transition: 0.3s;
+    
+}
+.headerCenter nav:hover{
+}
+.headerCenter a:hover{
+    color: red;
+    border-radius: 10px;
 }
 .headerBottomAccueil{
     position: relative;
@@ -110,7 +129,7 @@ html{
     height: 3rem;
     width: 20rem;
 }
-.headerBottomAccueil button{
+.headerBottomAccueil button,.reservation button{
     width: 9rem;
     height: 3.2rem;
     font-weight: 800;
@@ -126,13 +145,20 @@ a{
 a:hover{
     cursor: pointer
 }
-.headerBottomAccueil button:hover{
+.headerBottomAccueil button:hover,.reservation button:hover{
     color: red;
     background-color: white;
     cursor: pointer;
     letter-spacing: 0.05rem;
 }
-
+.reservation{
+    height: 20rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
 
 .headerBottomAutres{
     position: relative;
@@ -269,7 +295,7 @@ li{
 }
 .carte{
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     max-height: 7210px;
     width: 1248px;
     box-shadow: 0 0 20px rgb(167, 167, 167);
