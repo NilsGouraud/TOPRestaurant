@@ -93,9 +93,10 @@ const createGalerie=()=>{
         formerActive[0].classList.remove("active");
     }
     const header=createHeaderGalerie();
+    const body=createBodyGalerie();
     const content=document.getElementById("content");
     content.innerHTML="";
-    content.append(header,footer);
+    content.append(header,body,footer);
     const activeTab=document.getElementById("galerie");
     activeTab.classList.add("active");
     addListeners();

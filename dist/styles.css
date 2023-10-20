@@ -197,6 +197,180 @@ a:hover{
 .actualite2>div>h2{
     font-size: 1.2rem;    
 }
+.conteneurGalerie{
+    display: flex;
+    justify-content: center;
+    padding: 96px;
+}
+.galerie{
+    height: 115rem;
+    display: grid;
+    gap: 0.6rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1.5fr 2fr;
+    box-shadow: 0 20px 20px rgb(167, 167, 167);
+    padding: 3em;
+}
+.galerie div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: white;
+}
+.galerie div h1{
+    color: white;
+    padding-bottom: 0.7rem;
+    font-size: 0.9rem;
+}
+.galerie img{
+    display: flex;
+    max-width: 397.33px;
+    object-fit: fill;
+}
+.galerieImage1{
+    background: 
+    linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(0, 0, 0, 1)
+        ),
+    url(galerie/1.jpg);
+}
+.galerieImage2{
+    background: 
+    linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(0, 0, 0, 1)
+        ),
+    url(galerie/2.jpg);
+}
+.galerieImage3{
+    background: 
+    linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(0, 0, 0, 1)
+        ),
+    url(galerie/3.jpg);
+}
+
+.galerieImage4{
+    background: 
+    linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(0, 0, 0, 1)
+        ),
+    url(galerie/4.jpg);
+}
+.galerieImage5{
+    background: 
+    linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(0, 0, 0, 1)
+        ),
+    url(galerie/5.jpg);
+}
+.galerieImage6{
+    background: 
+    linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(0, 0, 0, 1)
+        ),
+    url(galerie/6.jpg);
+}
+
+.galerieImage7{
+    background: 
+    linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(0, 0, 0, 1)
+        ),
+    url(galerie/7.jpg);
+}
+.galerieImage8{
+    background: 
+    linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(0, 0, 0, 1)
+        ),
+    url(galerie/8.jpg);
+}
+.galerieImage9{
+    background: 
+    linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(0, 0, 0, 1)
+        ),
+    url(galerie/9.jpg);
+}
+
+.galerieImage10{
+    background: 
+    linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(0, 0, 0, 1)
+        ),
+    url(galerie/10.jpg);
+}
+.galerieImage11{
+    background: 
+    linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(0, 0, 0, 1)
+        ),
+    url(galerie/11.jpg);
+}
+.galerieImage12{
+    background: 
+    linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(0, 0, 0, 1)
+        ),
+    url(galerie/12.jpg);
+}
+
+.galerieTest{
+    background-color: red;
+    height: 100%;
+    width: 300px;
+}
 .headerBottomAutres{
     position: relative;
     color: white;

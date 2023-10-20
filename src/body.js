@@ -123,34 +123,72 @@ const reservation=document.createElement("div");
     return reservation;
 }
 const createBodyGalerie=()=>{
-const conteneurCarte=document.createElement("div");
-    conteneurCarte.classList.add("conteneurCarte");
-    const carte=document.createElement("div");
-    carte.classList.add("carte");
-    const aPartager=document.createElement("img");
-    aPartager.src="menu/aPartager.png";
-    aPartager.alt="";
-    const entrees=document.createElement("img");
-    entrees.src="menu/entrees.png";
-    entrees.alt="";
-    const specialites=document.createElement("img");
-    specialites.src="menu/entrees.png";
-    specialites.alt="";
-    const plats=document.createElement("img");
-    plats.src="menu/plats.png";
-    plats.alt="";
-    const desserts=document.createElement("img");
-    desserts.src="menu/desserts.png";
-    desserts.alt="";
-    const boissons=document.createElement("img");
-    boissons.src="menu/boissons.png";
-    boissons.alt="";
-    const vins=document.createElement("img");
-    vins.src="menu/vins.png";
-    vins.alt="";
-    carte.append(aPartager,entrees,specialites,plats,desserts,boissons,vins);
-    conteneurCarte.append(carte)
-    return conteneurCarte;
+const conteneurGalerie=document.createElement("div");
+    conteneurGalerie.classList.add("conteneurGalerie");
+    const galerie=document.createElement("div");
+    galerie.classList.add("galerie");
+
+
+    const galerie1=document.createElement("div");
+    const textGalerie1=document.createElement("h1");
+    textGalerie1.textContent="Une salle chaleureuse";
+    galerie1.append(textGalerie1);
+    galerie1.classList.add("galerieTest","galerieImage1");
+    const galerie2=document.createElement("div");
+    galerie2.classList.add("galerieTest","galerieImage2");
+    const textGalerie2=document.createElement("h1");
+    textGalerie2.textContent="L'hiver au Refuge";
+    galerie2.append(textGalerie2);
+    const galerie3=document.createElement("div");
+    galerie3.classList.add("galerieTest","galerieImage3");
+    const textGalerie3=document.createElement("h1");
+    textGalerie3.textContent="Une salle chaleureuse";
+    galerie3.append(textGalerie3);
+    const galerie4=document.createElement("div");
+    galerie4.classList.add("galerieTest","galerieImage4");
+    const textGalerie4=document.createElement("h1");
+    textGalerie4.textContent="L'hiver au Refuge";
+    galerie4.append(textGalerie4);
+    const galerie5=document.createElement("div");
+    galerie5.classList.add("galerieTest","galerieImage5");
+    const textGalerie5=document.createElement("h1");
+    textGalerie5.textContent="Une salle chaleureuse";
+    galerie5.append(textGalerie5);
+    const galerie6=document.createElement("div");
+    galerie6.classList.add("galerieTest","galerieImage6");
+    const galerie7=document.createElement("div");
+    galerie7.classList.add("galerieTest","galerieImage7");
+    const textGalerie7=document.createElement("h1");
+    textGalerie7.textContent="L'hiver au Refuge";
+    galerie7.append(textGalerie7);
+    const galerie8=document.createElement("div");
+    galerie8.classList.add("galerieTest","galerieImage8");
+    const galerie9=document.createElement("div");
+    galerie9.classList.add("galerieTest","galerieImage9");
+    const textGalerie9=document.createElement("h1");
+    textGalerie9.textContent="L'hiver au Refuge";
+    galerie9.append(textGalerie9);
+    const galerie10=document.createElement("div");
+    galerie10.classList.add("galerieTest","galerieImage10");
+    const galerie11=document.createElement("div");
+    galerie11.classList.add("galerieTest","galerieImage11");
+    const galerie12=document.createElement("div");
+    galerie12.classList.add("galerieTest","galerieImage12");
+    galerie.append(galerie1,
+        galerie2,
+        galerie3,
+        galerie4,
+        galerie5,
+        galerie6,
+        galerie7,
+        galerie8,
+        galerie9,
+        galerie10,
+        galerie11,
+        galerie12,
+        );
+    conteneurGalerie.append(galerie)
+    return conteneurGalerie;
 }
 
 
