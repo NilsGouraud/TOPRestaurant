@@ -51,9 +51,10 @@ const createAccueil=()=>{
         formerActive[0].classList.remove("active");
     }
     const header=createHeaderAccueil();
+    const body=createBodyAccueil();
     const content=document.getElementById("content");
     content.innerHTML="";
-    content.append(header,footer);
+    content.append(header,body,footer);
     const activeTab=document.getElementById("accueil");
     activeTab.classList.add("active");
     addListeners();
